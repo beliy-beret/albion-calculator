@@ -199,6 +199,24 @@ const POTIONS = {
       { id: 'corn_hooch', name: 'Corn Hooch', ruName: 'Кукурузный самогон', amount: 18 },
     ],
   },
+
+  INVISIBILITY: {
+    key: 'INVISIBILITY',
+    name: 'Invisibility Potion',
+    ruName: 'Зелье невидимости',
+    tier: 'T8',
+    group: 'invisibility',
+    emoji: '👻',
+    color: '#722ed1',
+    outputAmount: 5,
+    ingredients: [
+      { id: 'ghoul_yarrow', name: 'Ghoul Yarrow', ruName: 'Тысячелистник упыря', amount: 72 },
+      { id: 'firetouched_mullein', name: 'Firetouched Mullein', ruName: 'Огнецвет', amount: 36 },
+      { id: 'dragon_teasel', name: 'Dragon Teasel', ruName: 'Драконья ворсянка', amount: 36 },
+      { id: 'cows_milk', name: "Cow's Milk", ruName: 'Коровье молоко', amount: 18 },
+      { id: 'pumpkin_hooch', name: 'Pumpkin Hooch', ruName: 'Тыквенный самогон', amount: 18 },
+    ],
+  },
 };
 
 const GROUP_LABELS = {
@@ -206,6 +224,7 @@ const GROUP_LABELS = {
   energy: '⚡ Зелья энергии',
   gigantify: '💪 Зелья гиганта',
   resistance: '🛡️ Зелья защиты',
+  invisibility: '👻 Зелья невидимости',
 };
 
 const getIngredientDefaults = (potion) => {
