@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import { Layout, Menu, Typography } from 'antd';
-import WoodCalculator from './pages/WoodCalculator.jsx';
+import ResourceCalculator from './pages/ResourceCalculator.jsx';
 import PotionCalculator from './pages/PotionCalculator.jsx';
 
 const { Header, Content } = Layout;
@@ -10,7 +10,7 @@ const { Title } = Typography;
 const BASE = '/albion-calculator';
 
 const NAV_ITEMS = [
-  { key: `${BASE}/`, label: '🌲 Дерево', path: `${BASE}/` },
+  { key: `${BASE}/`, label: '📦 Ресурсы', path: `${BASE}/` },
   { key: `${BASE}/potions`, label: '⚗️ Зелья', path: `${BASE}/potions` },
 ];
 
@@ -63,9 +63,9 @@ const AppLayout = () => {
 
       <Content style={{ padding: '24px 16px' }}>
         <Routes>
-          <Route path={`${BASE}/`} element={<WoodCalculator />} />
+          <Route path={`${BASE}/`} element={<ResourceCalculator />} />
           <Route path={`${BASE}/potions`} element={<PotionCalculator />} />
-          <Route path="*" element={<WoodCalculator />} />
+          <Route path="*" element={<ResourceCalculator />} />
         </Routes>
       </Content>
     </Layout>
